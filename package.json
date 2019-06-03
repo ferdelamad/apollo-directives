@@ -1,0 +1,25 @@
+{
+  "name": "apollo-directives",
+  "version": "1.0.0",
+  "description": "Custom graphql/apollo directives",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferdelamad/apollo-directives.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ferdelamad/apollo-directives/issues"
+  },
+  "homepage": "https://github.com/ferdelamad/apollo-directives#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5"
+  }
+}
