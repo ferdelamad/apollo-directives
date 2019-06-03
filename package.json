@@ -10,8 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/ferdelamad/apollo-directives.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "apollo directives",
+    "graphql directives",
+    "apollo rename directive",
+    "graphql rename directive",
+  ],
+  "author": "Fernando De La Madrid",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ferdelamad/apollo-directives/issues"
