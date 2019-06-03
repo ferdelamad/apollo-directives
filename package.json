@@ -25,10 +25,16 @@
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5"
+    "@babel/plugin-transform-regenerator": "^7.4.5",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/runtime": "^7.4.5"
   },
   "dependencies": {
     "graphql": "^14.3.1",
     "graphql-tools": "^4.0.4"
+  },
+  "peerDependencies": {
+    "@babel/runtime": "^7.4.5"
   }
 }
