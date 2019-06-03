@@ -1,6 +1,6 @@
 {
   "name": "apollo-directives",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Custom graphql/apollo directives",
   "main": "dist/index.js",
   "scripts": {
@@ -14,7 +14,11 @@
     "apollo directives",
     "graphql directives",
     "apollo rename directive",
-    "graphql rename directive"
+    "graphql rename directive",
+    "apollo string directives",
+    "graphql string directives",
+    "rename field graphql",
+    "apollo rename field"
   ],
   "author": "Fernando De La Madrid",
   "license": "ISC",
@@ -31,7 +35,8 @@
   },
   "dependencies": {
     "graphql": "^14.3.1",
-    "graphql-tools": "^4.0.4"
+    "graphql-tools": "^4.0.4",
+    "lodash": "^4.17.11"
   },
   "peerDependencies": {
     "@babel/runtime": "^7.4.5"
