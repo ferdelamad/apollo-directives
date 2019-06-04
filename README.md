@@ -1,6 +1,6 @@
 # apollo-directives
 
-![npm package](https://img.shields.io/badge/npm%20package-1.0.2-brightgreen.svg)
+![npm package](https://img.shields.io/badge/npm%20package-1.0.4-brightgreen.svg)
 
 Custom graphQL directives for [Apollo](https://www.apollographql.com/)
 
@@ -21,13 +21,14 @@ yarn add apollo-directives
 Add `schemaDirectives` to your server
 ```js
 const { ApolloServer } = require('apollo-server-express')
-const { renameField, upperFirst, toLower } = require('apollo-directives')
+const { renameField, upperFirst, toUpper, toLower, trim, } = require('apollo-directives')
 
 const server = new ApolloServer({
   schemaDirectives: {
     renameField,
     upperFirst,
     toUpper,
+    toLower,
     trim
   }
   ...
@@ -44,8 +45,9 @@ const { gql } = require('apollo-server-express');
 const typeDefs = gql`
   directive @renameField(name: String!) on FIELD_DEFINITION
   directive @upperFirst on FIELD_DEFINITION
-  directive @toUpper on FIELD_DEFINITION
+  directive @toLower on FIELD_DEFINITION
   directive @trim on FIELD_DEFINITION
+  directive @toUpper on FIELD_DEFINITION
 
   type Person {
     myCustomField: String! @renameField(name: "original_api_field_name")
@@ -53,6 +55,7 @@ const typeDefs = gql`
     lastName: String! @upperFirst
     title: String! @toUpper
     address: String! @trim
+    state: String! @toLower
   }
 `;
 ```
